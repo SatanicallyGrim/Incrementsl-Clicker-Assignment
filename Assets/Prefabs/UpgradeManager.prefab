@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6931999209486585780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6931999209486585770}
+  - component: {fileID: 6931999209486585771}
+  m_Layer: 0
+  m_Name: UpgradeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6931999209486585770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6931999209486585780}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6931999209486585771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6931999209486585780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 367689b0c36df484ba72213239367f8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  upgrades:
+  - perSecondIncrease: 1
+    purchaseCost: 5
+    unlockCost: 15
+  - perSecondIncrease: 2
+    purchaseCost: 10
+    unlockCost: 30
+  - perSecondIncrease: 4
+    purchaseCost: 20
+    unlockCost: 90
+  - perSecondIncrease: 8
+    purchaseCost: 40
+    unlockCost: 180
+  - perSecondIncrease: 16
+    purchaseCost: 80
+    unlockCost: 360
+  - perSecondIncrease: 32
+    purchaseCost: 160
+    unlockCost: 720
+  - perSecondIncrease: 64
+    purchaseCost: 320
+    unlockCost: 1440
+  - perSecondIncrease: 128
+    purchaseCost: 640
+    unlockCost: 2880
+  - perSecondIncrease: 256
+    purchaseCost: 1280
+    unlockCost: 5760
+  - perSecondIncrease: 7
+    purchaseCost: 2560
+    unlockCost: 11520
+  buttonPrefab: {fileID: 4688303327623052630, guid: d1461e13c5e9d6544960c773dfac10b0, type: 3}
+  panelParent: {fileID: 0}
